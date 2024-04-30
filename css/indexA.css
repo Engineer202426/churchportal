@@ -1,0 +1,284 @@
+  /* Style the modal background overlay */
+  #uploadModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    overflow-y: auto;
+    /* Enable vertical scrolling if needed */
+    z-index: 2;
+  }
+
+  /* Style the modal content */
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    /* Adjust the maximum width as needed */
+    margin: 10% auto;
+    /* Center vertically and horizontally */
+    text-align: center;
+  }
+
+  /* Style the close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+  }
+
+  .upload-container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+  .upload-container input[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Hover effect for the upload button */
+  .upload-container input[type="button"]:hover {
+    opacity: 0.8;
+    /* Reduce opacity on hover */
+  }
+
+  /* Style the upload response message */
+  #uploadResponse {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+    /* Blue color for success messages */
+  }
+
+  #configModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    overflow-y: auto;
+    /* Enable vertical scrolling if needed */
+    z-index: 1;
+  }
+
+  /* Center the config modal content horizontally */
+  .modal-content.config-center {
+    text-align: left;
+    /* Align content to the left */
+    padding: 20px;
+    border: 1px solid #888;
+    background-color: #fff;
+    position: relative;
+    width: 80%;
+    /* Adjust the width as needed */
+    max-width: 800px;
+    /* Adjust the maximum width as needed */
+    margin: 10% auto;
+    /* Center vertically and horizontally */
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    /* Add shadow effect */
+  }
+
+  /* Add a close button to the modal */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+  }
+
+  /* Style the form fields and labels as needed */
+  .config-container label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .config-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .config-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Add a margin between form sections */
+  .config-container h3 {
+    margin-top: 20px;
+  }
+
+  /* Style the slideshow image */
+  .mySlides img {
+    width: 100%;
+    /* Adjust the width as needed, e.g., 50% or a specific pixel value */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
+
+  /* Style the slideshow image and align it to the right */
+  .mySlides {
+    float: right;
+  }
+
+  /* Style the "Edit Configuration" button */
+  #openConfigModal {
+    background-color: #28a745;
+    /* Green background color */
+    color: #fff;
+    /* White text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* Add some margin to separate the buttons */
+  #openUploadModal {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* Style the modal background overlay */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    z-index: 2;
+  }
+
+  /* Style the modal content */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+  }
+
+  /* Style the close button */
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+  }
+
+  /* Hover effect for the "Upload Image" button */
+  #openUploadModal:hover {
+    opacity: 0.8;
+    /* Reduce opacity on hover */
+  }
+
+  #openConfigModal {
+    margin-right: 10px;
+  }
+
+  /* Hover effect for buttons */
+  #openUploadModal:hover,
+  #openConfigModal:hover {
+    opacity: 0.8;
+    /* Reduce opacity on hover */
+  }
+
+  .dot-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+  .config-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+  }
+
+
+
+  .content-container {
+    margin: 20px;
+    /* Adjust the margin value as needed */
+    padding: 10px;
+    /* Optional: Add padding for inner spacing */
+    border: 0px solid #ccc;
+    /* Optional: Add a border for visual separation */
+  }
+
+  .slideshow-container {
+    max-width: 2500px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .openUploadModal{
+margin-top: 10px;
+  }
